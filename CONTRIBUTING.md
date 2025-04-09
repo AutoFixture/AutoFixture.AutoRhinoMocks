@@ -1,6 +1,7 @@
 # How to contribute to AutoFixture
 
-AutoFixture is currently being developed in C# on .NET 4.5.2 and .NET Standard using Visual Studio 2017 Update 5 or later with [xUnit.net](http://xunit.codeplex.com/) as the unit testing framework. So far, all development has been done with TDD, so there's a pretty high degree of code coverage, and the aim is to keep it that way.
+AutoFixture is currently being developed in C# on .NET 4.5.2 and .NET Standard using Visual Studio 2022 or later with [xUnit.net](https://xunit.net/) as the unit testing framework.
+So far, all development has been done with TDD, so there's a pretty high degree of code coverage, and the aim is to keep it that way.
 
 ## Build
 
