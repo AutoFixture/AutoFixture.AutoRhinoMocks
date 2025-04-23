@@ -1,17 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <Import Project="..\Common.props" />
-  <Import Project="..\Common.Test.props" />
-  <Import Project="..\Common.Test.xUnit.props" />
+  <Import Project="..\..\Common.props" />
+  <Import Project="..\..\Common.Test.props" />
+  <Import Project="..\..\Common.Test.xUnit.props" />
 
   <PropertyGroup>
-    <TargetFramework>net452</TargetFramework>
+    <TargetFrameworks>net452;net462</TargetFrameworks>
     <AssemblyTitle>AutoRhinoMockUnitTest</AssemblyTitle>
     <AssemblyName>AutoFixture.AutoRhinoMock.UnitTest</AssemblyName>
     <RootNamespace>AutoFixture.AutoRhinoMock.UnitTest</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AutoFixture\AutoFixture.csproj" />
+    <PackageReference Include="AutoFixture" Version="4.18.1" />
     <ProjectReference Include="..\AutoRhinoMock\AutoRhinoMock.csproj" />
     <ProjectReference Include="..\TestTypeFoundation\TestTypeFoundation.csproj" />
   </ItemGroup>
