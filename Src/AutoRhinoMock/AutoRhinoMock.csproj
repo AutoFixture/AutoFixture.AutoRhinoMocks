@@ -1,13 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <Import Project="..\Common.props" />
+  <Import Project="..\..\Common.props" />
 
   <PropertyGroup>
-    <TargetFramework>net452</TargetFramework>
+    <TargetFrameworks>net452;net462</TargetFrameworks>
     <AssemblyTitle>AutoFixture.AutoRhinoMock</AssemblyTitle>
     <AssemblyName>AutoFixture.AutoRhinoMock</AssemblyName>
     <RootNamespace>AutoFixture.AutoRhinoMock</RootNamespace>
-    <Copyright>Copyright © Ploeh 2011</Copyright>
-    
+
     <!-- NuGet options -->
     <PackageId>AutoFixture.AutoRhinoMocks</PackageId>
     <Title>AutoFixture with Auto Mocking using Rhino Mocks</Title>
@@ -15,10 +14,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoFixture" Version="4.18.1" />
     <PackageReference Include="RhinoMocks" Version="[3.6,4.0.0)" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\AutoFixture\AutoFixture.csproj" />
   </ItemGroup>
 </Project>
